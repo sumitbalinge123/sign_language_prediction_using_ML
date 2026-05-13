@@ -6,10 +6,12 @@ The project generally involves the following steps:
 1. Data Collection:
 Collect a large dataset of hand gestures and signs, either through a custom dataset of images or videos or from pre-existing datasets like the American Sign Language (ASL) dataset.
 The dataset is labeled with the corresponding meaning of each gesture, ensuring that the machine learning model can learn from this data.
+
 2. Preprocessing:
 Image processing: Techniques like resizing, normalization, grayscale conversion, etc., are applied to images.
 Feature extraction: Features like the position of hand joints, angles, and shapes are extracted using libraries like OpenCV and MediaPipe.
 Data augmentation: To increase the dataset, transformations like rotation, flipping, scaling, etc., may be applied to images.
+
 3. Machine Learning Algorithms for Prediction:
 Various machine learning algorithms can be used for sign language recognition, each with its strengths:
 
@@ -19,6 +21,7 @@ Effective in high-dimensional spaces and works well for classification tasks lik
 K-Nearest Neighbors (KNN):
 Works by finding the ‘K’ nearest neighbors to a given data point and classifying the point based on the majority label of its neighbors.
 Simple but may become inefficient with large datasets.
+
 Convolutional Neural Networks (CNNs):
 CNNs are highly effective for image recognition tasks.
 They automatically extract features from images, such as edges and textures, which are key for recognizing hand gestures.
@@ -27,13 +30,16 @@ Random Forest Algorithm:
 Random Forest is an ensemble learning method that combines multiple decision trees to improve prediction accuracy.
 It can handle both classification and regression tasks.
 By aggregating the predictions of several trees, it improves the model’s overall stability and accuracy.
+
 4. Training the Model:
 After selecting the appropriate machine learning algorithm, the model is trained on the preprocessed dataset.
 The model is trained to map hand gestures to their corresponding meanings (labels).
 The training process typically involves splitting the dataset into training and testing subsets, using cross-validation to avoid overfitting.
+
 5. Model Evaluation:
 Common metrics like accuracy, precision, recall, and F1-score are used to evaluate the model’s performance.
 The goal is to minimize false positives and negatives in recognizing signs.
+
 6. Deployment:
 After training, the model can be deployed into an application where a camera or sensor captures the hand gestures, and the trained model predicts the corresponding sign.
 Random Forest Algorithm in Detail
